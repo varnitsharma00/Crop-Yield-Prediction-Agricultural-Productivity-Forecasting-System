@@ -1,0 +1,39 @@
+# --- Web Framework -----------------------------------------------------
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+
+# --- Database / ORM -----------------------------------------------------
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# --- Auth / Security -----------------------------------------------------
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.9
+
+# --- Validation / Config -----------------------------------------------------
+pydantic==2.7.1
+pydantic-settings==2.2.1
+python-dotenv==1.0.1
+
+# --- Data Processing -----------------------------------------------------
+pandas==2.2.2
+numpy==2.5.1
+
+# --- ML (active — used by yield prediction model, Milestone-1) -----------------------------------------------------
+scikit-learn==1.9.0
+xgboost==2.1.*
+joblib==1.5.3
+scipy==1.18.0
+threadpoolctl==3.6.0
+narwhals==2.24.0
+
+# --- Milestone-3: Analytics, Recommendations & Reporting -----------------------------------------------------
+# No new packages required for the Recommendation Engine / Risk Assessment router
+# (it only uses fastapi + pydantic, both already listed above).
+# reportlab==4.2.0        # uncomment when building Task 6 PDF export (Option B, backend-generated PDF)
+
+# --- Testing -----------------------------------------------------
+pytest==8.2.0
+httpx==0.27.0

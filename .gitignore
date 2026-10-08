@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node.js
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# VS Code
+.vscode/
+
+# Build files
+dist/
+build/
+
+# ML Model files
+*.pkl
+*.joblib
+*.h5
+models/*.model
+models/*.bin
+
+# Windows
+Thumbs.db
+
+# Next.js build output
+frontend/.next/
+
+# Debug/test exports
+test_export.csv
+backend/predictions_test.csv

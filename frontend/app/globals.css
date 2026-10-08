@@ -1,0 +1,73 @@
+/* Global styles referencing the design tokens defined in docs/design-system.md */
+
+:root {
+  --color-primary-700: #1B5E20;
+  --color-primary-500: #2E7D32;
+  --color-primary-100: #E8F5E9;
+  --color-accent-amber: #F9A825;
+  --color-secondary-brown: #6D4C31;
+  --color-neutral-900: #1A1A1A;
+  --color-neutral-600: #5F6368;
+  --color-neutral-200: #E0E0E0;
+  --color-surface: #FFFFFF;
+  --color-background: #F7F9F6;
+  --color-success: #2E7D32;
+  --color-error: #C62828;
+  --color-info: #1565C0;
+
+  /* NEW — elevation, radius, spacing, gradient tokens (see design-system.md §9) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 1px 2px rgba(26, 26, 26, 0.06);
+  --shadow-md: 0 4px 12px rgba(26, 26, 26, 0.08);
+  --shadow-lg: 0 12px 32px rgba(27, 94, 32, 0.18);
+
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-700), var(--color-primary-500));
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-neutral-900);
+  font-family: Inter, system-ui, sans-serif;
+  margin: 0;
+}
+
+button {
+  background: var(--color-primary-500);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-primary-700);
+}
+
+button:disabled {
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-600);
+  cursor: not-allowed;
+}
+
+.stat-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 12px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 160px;
+}
